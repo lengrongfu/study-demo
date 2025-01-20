@@ -1,0 +1,1 @@
+cmd_/root/c-workspace/cgpu/cgpu_km.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /root/c-workspace/cgpu/cgpu_km.ko /root/c-workspace/cgpu/cgpu_km.o /root/c-workspace/cgpu/cgpu_km.mod.o;  true

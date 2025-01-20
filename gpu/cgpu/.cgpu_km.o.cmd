@@ -1,0 +1,1 @@
+cmd_/root/c-workspace/cgpu/cgpu_km.o := ld -m elf_x86_64 -z noexecstack   -r -o /root/c-workspace/cgpu/cgpu_km.o /root/c-workspace/cgpu/os-interface.o /root/c-workspace/cgpu/cgpu-procfs.o /root/c-workspace/cgpu/cgpu.o /root/c-workspace/cgpu/cgpu-km.o

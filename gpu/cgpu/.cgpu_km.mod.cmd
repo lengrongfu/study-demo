@@ -1,0 +1,1 @@
+cmd_/root/c-workspace/cgpu/cgpu_km.mod := { echo  /root/c-workspace/cgpu/os-interface.o /root/c-workspace/cgpu/cgpu-procfs.o /root/c-workspace/cgpu/cgpu.o /root/c-workspace/cgpu/cgpu-km.o;  echo; } > /root/c-workspace/cgpu/cgpu_km.mod
