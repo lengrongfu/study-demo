@@ -1,0 +1,2 @@
+gpu/rcuda/cuda-8.0.tar.gz filter=lfs diff=lfs merge=lfs -text
+gpu/rcuda/rCUDAv16.11.04.02-CUDA8.0-linux64.tgz filter=lfs diff=lfs merge=lfs -text
