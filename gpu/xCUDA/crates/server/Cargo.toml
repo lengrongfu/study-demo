@@ -1,0 +1,28 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+description = "xCUDA-server is a Remote GPU server."
+#build = "builds.rs"
+
+[[bin]]
+name = "xcuda-server"
+path = "src/main.rs"
+
+[build-dependencies]
+bindgen = { git = "https://github.com/rust-lang/rust-bindgen", branch = "main" }
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+tarpc = { version = "0.33.0", features = ["full"] }
+tokio = { version = "1.24.2", features = ["macros", "net", "rt-multi-thread"] }
+tokio-serde = "0.8.0"
+futures-util = "0.3.25"
+libloading = "0.8.1"
+libc = "0.2.139"
+futures = "0.3.25"
+anyhow = "1.0.68"
+api = { version = "0.1.0", path = "../api" }
+clap = { version = "4.4.11", features = ["derive"] }
+code_genearte = { version = "0.0.1", path = "../code_genearte" }

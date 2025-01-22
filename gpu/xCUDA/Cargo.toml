@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "crates/nvml-lib",
+    "crates/cuda-lib",
+    "crates/cuda-runtime-lib",
+    "crates/server",
+
+    # internal
+    "crates/api",
+    "samples",
+    "crates/code_genearte"
+]

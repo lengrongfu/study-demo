@@ -1,0 +1,10 @@
+[package]
+name = "samples"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "this create is save demo code."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
