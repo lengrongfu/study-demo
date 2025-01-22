@@ -26,7 +26,7 @@ fn cudaRuntimeClient<'a>() -> &'a Mutex<api::cuda_runtime_api::CudaRuntimeClient
         // Since this access is inside a call_once, before any other accesses, it is safe
         unsafe {
             let transport = block_on(tarpc::serde_transport::tcp::connect(
-                "10.20.2.102:50051",
+                "192.168.0.1:50051",
                 Json::default,
             ))
             .unwrap();

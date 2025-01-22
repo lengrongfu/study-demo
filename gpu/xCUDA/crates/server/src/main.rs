@@ -29,7 +29,7 @@ async fn main() -> anyhow::Result<()> {
 
     // JSON transport is provided by the json_transport tarpc module. It makes it easy
     // to start up a serde-powered json serialization strategy over TCP.
-    let listener = tarpc::serde_transport::tcp::listen("10.20.2.102:50051", Json::default).await?;
+    let listener = tarpc::serde_transport::tcp::listen("192.168.0.1:50051", Json::default).await?;
 
     println!("xcuda-server listening on `{}`", listener.local_addr());
 
